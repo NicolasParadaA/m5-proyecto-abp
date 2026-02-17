@@ -60,10 +60,11 @@ Desarrollar una aplicación funcional que permita gestionar tareas aplicando pri
 - **JSONPlaceholder** - API de prueba
 
 ## 📁 Estructura del Proyecto
-
+´´´
 taskflow/
 ├── index.html # Estructura HTML
 ├── style.css # Estilos con BEM
 └── app.js # Lógica JavaScript
+´´´
 
 ![TaskFlow Preview](./screenshot.png)
