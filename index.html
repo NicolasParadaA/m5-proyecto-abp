@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Gestor de Tareas</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="taskflow__title">TaskFlow: Gestor de Tareas.</h1>
+
+        <form id="formulario-tareas" class="task-form">
+            <input type="text" id="input-tarea" class="task-form__input task-form__input--text" placeholder="Escribe una nueva tarea..." required>
+            <input type="datetime-local" id="input-fecha-limite" class="task-form__input task-form__input--date">
+            <button type="submit" class="task-form__button task-form__button--submit">Agregar Tarea</button>
+        </form>
+        <button class="button button--secondary" onclick="obtenerTareasAPI()">Importar tareas de API</button>
+        <p id="notificacion" class="notification"></p>
+        <p id="contador-caracteres" class="counter"></p>
+        <ul id="lista-tareas" class="task-list"></ul>
+    </div>
+</body>
+
+</html>

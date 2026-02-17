@@ -1,0 +1,176 @@
+/* ============================================
+   RESET
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================
+   BODY
+   ============================================ */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* ============================================
+   CONTAINER
+   ============================================ */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   TASKFLOW TITLE
+   ============================================ */
+.taskflow__title {
+    color: #667eea;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ============================================
+   TASK FORM
+   ============================================ */
+.task-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.task-form__input {
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.task-form__input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.task-form__input--text {
+    flex: 1;
+    min-width: 200px;
+}
+
+.task-form__button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.task-form__button:hover {
+    transform: translateY(-2px);
+}
+
+.task-form__button--submit {
+    background: #667eea;
+    color: white;
+}
+
+/* ============================================
+   BUTTON (General)
+   ============================================ */
+.button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button--secondary {
+    width: 100%;
+    background: #f1f5f9;
+    color: #64748b;
+    margin-bottom: 1rem;
+}
+
+/* ============================================
+   NOTIFICATION
+   ============================================ */
+.notification {
+    background: #d1fae5;
+    color: #065f46;
+    padding: 0.75rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.notification:empty {
+    display: none;
+}
+
+/* ============================================
+   COUNTER
+   ============================================ */
+.counter {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+/* ============================================
+   TASK LIST
+   ============================================ */
+.task-list {
+    list-style: none;
+}
+
+.task-list__item {
+    background: #f8fafc;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.task-list__button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.task-list__button:hover {
+    transform: translateY(-2px);
+}
+
+.task-list__button--delete {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.task-list__button--toggle {
+    background: #dbeafe;
+    color: #2563eb;
+}
